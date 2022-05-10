@@ -1,6 +1,6 @@
 # YamataBlog
 A Blog app for sharing images and messaging with registered users
-# This is an app i made during my internship so its not completely a blog app but have some of the features of it
+(This is an app i made during my internship so its not completely a blog app but have some of the features of it)
 
 ![Ekran görüntüsü 2022-05-10 192150](https://user-images.githubusercontent.com/83312431/167677819-bff58223-c868-43ad-a244-77ab5d7f2fb2.png)
 
