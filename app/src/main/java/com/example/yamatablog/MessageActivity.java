@@ -41,7 +41,7 @@ import java.util.List;
 import java.util.Map;
 
 public class MessageActivity extends AppCompatActivity {
-    private static final String ServerKey = "key=AAAA6CH9u3Y:APA91bEdGSVnHIpKE3A_RdP1E2GuF3U5mH1_CRah8kRCbZFZhZ9wRwYq68El1Sqax4MMzt8iu32mmdWKHxS32Bex0pK-5QteZ_rTM66USWppOj7KJQF1F4_SOhaCXIZL_Rr0wCVuSpqr";
+    private static final String ServerKey = "PUT YOUR OWN KEY HERE";
     DatabaseReference mReference = FirebaseDatabase.getInstance().getReference().child("Messages");
     DatabaseReference uRef;
     FirebaseUser mUser = FirebaseAuth.getInstance().getCurrentUser();
