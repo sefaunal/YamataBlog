@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_notfixed"
+            android:icon="@drawable/nav_outline_home"
+            android:title="Çözülmemiş Problemler" />
+        <item
+            android:id="@+id/nav_home_fixed"
+            android:icon="@drawable/nav_done"
+            android:title="Çözülmüş Problemler" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/nav_person"
+            android:title="Profil" />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_chat_bubble"
+            android:title="Mesajlarım" />
+
+        <item
+            android:id="@+id/nav_ratings"
+            android:icon="@drawable/ic_star_outline"
+            android:title="Değerlendirmeler" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/nav_outline_logout"
+            android:title="Çıkış Yap" />
+    </group>
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_user_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/registerphoto" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_user_on"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="#05df29"
+        android:layout_below="@+id/message_user_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/message_user_image"
+        android:layout_toEndOf="@id/message_user_image"
+        android:visibility="invisible"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_user_off"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="#bfbfbf"
+        android:layout_below="@+id/message_user_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/message_user_image"
+        android:layout_toEndOf="@id/message_user_image"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/message_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/message_user_image"
+        android:layout_toRightOf="@+id/message_user_image"
+        android:text="username"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/message_last_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_user_name"
+        android:layout_toRightOf="@id/message_user_image"
+
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"/>
+
+
+
+</RelativeLayout>

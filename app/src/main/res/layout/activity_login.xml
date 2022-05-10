@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/login_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/login_image"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoşgeldiniz"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/login_mail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edittext_border"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:inputType="textEmailAddress"
+            android:hint="Mail Adresiniz" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/bg_edittext_border"
+            android:drawableLeft="@drawable/ic_password"
+            android:textColor="@android:color/holo_blue_light"
+            android:inputType="textPassword"
+            android:hint="Şifreniz" />
+
+        <TextView
+            android:id="@+id/login_resetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şifrenizi mi unuttunuz?"
+            android:textColor="@color/purple"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:text="Giriş Yap"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesabınız yok mu? Kayıt Olun"
+            android:textColor="@color/purple"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

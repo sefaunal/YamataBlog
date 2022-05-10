@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "997002689398",
+    "firebase_url": "https://yamata-e1c33-default-rtdb.firebaseio.com",
+    "project_id": "yamata-e1c33",
+    "storage_bucket": "yamata-e1c33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997002689398:android:0e459bed2970af34981857",
+        "android_client_info": {
+          "package_name": "com.example.yamatablog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997002689398-j6jf8qmfcmbls7bl16mcaspvpennm0g1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7zjYC-iUaVexJuLFW06FiuhDQZx3H8Ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997002689398-j6jf8qmfcmbls7bl16mcaspvpennm0g1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

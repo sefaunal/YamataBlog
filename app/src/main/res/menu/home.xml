@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="100"
+        android:title="Filtrele"
+        app:showAsAction="never" >
+
+        <menu>
+            <item
+                android:title="Departmana Göre">
+                <menu>
+                    <item
+                        android:title="Bilgi Teknolojileri"
+                        android:id="@+id/menu_bt" />
+                    <item
+                        android:title="Lojistik"
+                        android:id="@+id/TBD1" />
+                    <item
+                        android:title="Şantiye Şefi"
+                        android:id="@+id/TBD2" />
+
+                    <item
+                        android:title="İnsan Kaynakları"
+                        android:id="@+id/TBD3" />
+
+                    <item
+                        android:title="Teknik Ofis"
+                        android:id="@+id/TBD4" />
+                </menu>
+            </item>
+        </menu>
+
+    </item>
+
+</menu>

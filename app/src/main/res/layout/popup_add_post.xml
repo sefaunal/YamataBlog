@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/popup_user_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:src="@drawable/registerphoto"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/popup_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popup_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="@drawable/bg_popup_edittext_style"
+        android:id="@+id/popup_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Başlık"
+        app:layout_constraintEnd_toStartOf="@+id/popup_user_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:background="@drawable/bg_popup_edittext_style"
+        android:id="@+id/popup_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Açıklama"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_dropdown" />
+
+    <Button
+        android:id="@+id/popup_addPhoto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fotoğraf Ekle (En Fazla 5 tane)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popup_description"/>
+
+    <EditText
+        android:id="@+id/popup_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popup_edittext_style"
+        android:ems="10"
+        android:hint="Adres"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_title" />
+
+    <AutoCompleteTextView
+        android:id="@+id/popup_dropdown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popup_edittext_style"
+        android:drawableRight="@drawable/ic_dropdown"
+        android:drawablePadding="10dp"
+        android:dropDownHeight="150dp"
+        android:ems="10"
+        android:hint="İlgilenecek departman"
+        android:inputType="none"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_address" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popup_img_RV"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:orientation="horizontal"
+        android:background="#F7F6F2"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popup_addPhoto_button" />
+
+    <ImageView
+        android:id="@+id/post_detail_comment_add"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_popup_circle"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_img_RV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_img_RV"
+        app:srcCompat="@drawable/ic_add" />
+
+
+    <ProgressBar
+        android:padding="4dp"
+        android:id="@+id/popup_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popup_circle"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/post_detail_comment_add"
+        app:layout_constraintEnd_toEndOf="@+id/post_detail_comment_add"
+        app:layout_constraintStart_toStartOf="@+id/post_detail_comment_add"
+        app:layout_constraintTop_toTopOf="@+id/post_detail_comment_add" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

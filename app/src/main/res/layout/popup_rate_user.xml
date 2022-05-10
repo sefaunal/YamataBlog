@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RatingBar
+        android:id="@+id/popup_rate_user_rate_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:progressTint="#8685ef"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/popup_rate_user_comment"
+        android:layout_width="300dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:hint="Yorumunuz ... (Opsiyonel)"
+        android:background="@drawable/bg_search_edittext"
+        android:layout_gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/popup_rate_user_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowUserRate">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/RateToolbarUpper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B42B51"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/message_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/show_user_rate_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/registerphoto" />
+
+
+                <TextView
+                    android:id="@+id/show_user_rate_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/show_user_rate_image"
+                    android:text="toolbar username"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/show_user_rate_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/show_user_rate_image"
+                    android:text="user last seen"
+                    android:textSize="8sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/show_user_rate_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RateToolbarUpper" />
+
+</RelativeLayout>
